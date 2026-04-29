@@ -2,25 +2,16 @@
     --fondo:        #0a0a0f;
     --superficie:   #11111a;
     --superficie2:  #181824;
-    --superficie3:  #1e1e2e;
     --borde:        rgba(255,255,255,0.07);
     --dorado:       #c8a96e;
-    --dorado2:      #8b6f47;
     --dorado-suave: rgba(200,169,110,0.35);
     --dorado-borde: rgba(200,169,110,0.25);
-    --dorado-semi:  rgba(200,169,110,0.2);
-    --dorado-hover: rgba(200,169,110,0.4);
     --dorado-claro: rgba(200,169,110,0.1);
-    --dorado-min:   rgba(200,169,110,0.05);
     --texto:        #e8e4dc;
     --texto-gris:   #8a8478;
     --texto-oscuro: #4a4640;
-    --fondo-trans:  rgba(10,10,15,0.85);
     --fondo-tag:    rgba(10,10,15,0.7);
-    --negro-sombra: rgba(0,0,0,0.55);
     --negro-overlay: rgba(0,0,0,0.85);
-    --negro-fuerte: rgba(0,0,0,0.92);
-    --negro-suave:  rgba(0,0,0,0.3);
 
     --fuente-titulos: 'Cormorant Garamond', serif;
     --fuente-normal:  'Syne', sans-serif;
@@ -117,15 +108,6 @@ nav {
     z-index: 0;
 }
 
-.foto-inicio {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    aspect-ratio: 3/4;
-    object-fit: cover;
-    border-radius: 22px;
-}
-
 .sin-foto {
     position: relative;
     z-index: 1;
@@ -143,13 +125,6 @@ nav {
 
 .sin-foto svg {
     opacity: 0.4; 
-}
-
-.sin-foto span {
-    font-family: var(--fuente-mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
 }
 
 .etiqueta {
@@ -220,10 +195,6 @@ nav {
     color: var(--texto-oscuro);
 }
 
-.scroll-indicador span {
-    display: none;
-}
-
 #sobremi {
     padding: 3rem 2rem;
     position: relative;
@@ -267,19 +238,6 @@ nav {
     margin: 0 auto;
 }
 
-.foto-sobremi-wrap::after {
-    display: none;
-}
-
-.foto-sobremi {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    aspect-ratio: 2/3;
-    object-fit: cover;
-    border-radius: 14px;
-}
-
 .placeholder-sobremi {
     position: relative;
     z-index: 1;
@@ -293,13 +251,6 @@ nav {
     justify-content: center;
     gap: 0.75rem;
     color: var(--texto-oscuro);
-}
-
-.placeholder-sobremi span {
-    font-family: var(--fuente-mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
 }
 
 .info-mia {
@@ -567,15 +518,6 @@ nav {
     border: 2px solid var(--dorado);
 }
 
-.foto-contacto {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 .placeholder-contacto {
     position: relative;
     z-index: 1;
@@ -589,13 +531,6 @@ nav {
     justify-content: center;
     gap: 0.5rem;
     color: var(--texto-oscuro);
-}
-
-.placeholder-contacto span {
-    font-family: var(--fuente-mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
 }
 
 .contacto-info { 
@@ -681,28 +616,6 @@ footer {
 }
 
 footer span { color: var(--dorado); }
-
-.separador {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
-}
-
-.separador::before,
-.separador::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--borde);
-}
-
-.separador-punto {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: var(--dorado);
-}
 
 @media (min-width: 640px) {
     .proy-grilla {
