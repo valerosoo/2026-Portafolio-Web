@@ -658,6 +658,12 @@ footer span { color: var(--dorado); }
     }
 }
 
+@media (max-width: 900px){
+    #inicio{
+        margin-top: 200px;
+    }
+}
+
 .aparece {
     opacity: 0;
     transition: opacity 0.4s ease;
